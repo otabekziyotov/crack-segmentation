@@ -12,6 +12,9 @@
 
 A deep learning project that segments **cracks** in surface images pixel by pixel (binary segmentation: crack vs background). It trains and compares two architectures — a **UNet built from scratch** and a library **DeepLabV3Plus** — on the [DeepCrack](https://www.kaggle.com/datasets/rukiyeaydn/deepcrack-dataset) dataset, reports IoU / Dice / pixel-accuracy, and ships an interactive Streamlit demo plus ONNX export for deployment.
 
+## Demo App
+Try the live demo: [link](https://crack-segmentation-oz.streamlit.app/)
+
 ## Features
 
 - **Custom dataset** loader for paired image/mask folders (`train_img`/`train_lab`, `test_img`/`test_lab`).
@@ -81,13 +84,13 @@ python main.py
 
 Downloads the data (if needed), trains **both** UNet and DeepLabV3Plus, and writes all report images to `results/`. Trained checkpoints are saved to `saved_models_unet/` and `saved_models_deeplab/`.
 
-## Demo (Streamlit)
+## Demo (Streamlit) (Local)
 
 ```bash
 streamlit run app.py
 ```
 
-Open **http://localhost:8501**. Switch between UNet and DeepLabV3Plus, pick a test sample (or upload your own image), and see:
+Open local link. Switch between UNet and DeepLabV3Plus, pick a test sample (or upload your own image), and see:
 - the predicted crack mask and a red overlay on the original,
 - the **ground-truth mask** (for test samples),
 - **IoU / Dice / pixel-accuracy** scores and a quality verdict,

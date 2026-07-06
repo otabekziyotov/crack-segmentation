@@ -1,0 +1,25 @@
+# ===== Datasets (downloaded via downloader.py) =====
+datasetlar/
+
+# ===== Trained models & exports =====
+saved_models_unet/
+saved_models_deeplab/
+onnx_models/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
+
+# ===== OS / IDE =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# NOTE: results/ and demo_samples/ are committed on purpose
+# (README images + Streamlit Cloud demo samples).

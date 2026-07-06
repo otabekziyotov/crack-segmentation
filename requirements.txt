@@ -1,0 +1,26 @@
+# ===== Deep learning =====
+torch
+torchvision
+segmentation-models-pytorch
+
+# ===== Dataset download & image handling =====
+kagglehub
+Pillow<12
+opencv-python-headless
+
+# ===== Data augmentation =====
+albumentations
+
+# ===== Numerics & progress =====
+numpy
+tqdm
+
+# ===== Visualization =====
+matplotlib
+
+# ===== Demo app =====
+streamlit>=1.50
+
+# ===== ONNX export =====
+onnx
+onnxruntime
